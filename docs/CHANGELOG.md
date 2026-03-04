@@ -1,5 +1,60 @@
 # Tabler Documentation Changelog
 
+## 1.5.0
+
+### Minor Changes
+
+- 48dbd1e: Migrated build system from Rollup to Vite across all packages. Replaced `rollup.config.mjs` with `vite.config.mjs` and updated build scripts to use `vite build` instead of `rollup`. Build outputs remain identical (UMD and ESM formats) with no breaking changes for end users.
+
+### Patch Changes
+
+- 100a37b: Added background pattern utilities and documentation, including updated preview demos.
+- 684f40e: Updated documentation to explain font sizing and system color CSS variables (`--tblr-primary-rgb`, `--tblr-secondary`, `--tblr-tertiary`, `--tblr-link-color`, `--tblr-gray-*`).
+- c430cfe: Updated UI component documentation to use singular file names and frontmatter fields (`title`, `summary`, `description`), and added redirects from legacy plural routes.
+- a198b0c: Added Geist font family integration.
+- 1489b13: Added `.prose` alias for markdown content and updated preview/docs references and redirects.
+- ab8009b: Fixed Docs search display in dark mode.
+- Updated dependencies [5e119d4]
+- Updated dependencies [100a37b]
+- Updated dependencies [059bae1]
+- Updated dependencies [5018aa9]
+- Updated dependencies [9c5d729]
+- Updated dependencies [ec94693]
+- Updated dependencies [c860288]
+- Updated dependencies [2dc7eda]
+- Updated dependencies [c8b8b24]
+- Updated dependencies [6e656ad]
+- Updated dependencies [8bc6fa7]
+- Updated dependencies [e206d7a]
+- Updated dependencies [4ce08ca]
+- Updated dependencies [b8b63d7]
+- Updated dependencies [0106d6b]
+- Updated dependencies [a198b0c]
+- Updated dependencies [9432835]
+- Updated dependencies [9c5d729]
+- Updated dependencies [8d8727f]
+- Updated dependencies [5e119d4]
+- Updated dependencies [3aba62e]
+- Updated dependencies [0c79963]
+- Updated dependencies [301e778]
+- Updated dependencies [48dbd1e]
+- Updated dependencies [4ce08ca]
+- Updated dependencies [9a3361f]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [1489b13]
+- Updated dependencies [41ed22a]
+- Updated dependencies [83ec6f8]
+- Updated dependencies [9c5d729]
+- Updated dependencies [736e604]
+- Updated dependencies [f8dee0a]
+- Updated dependencies [9c5d729]
+- Updated dependencies [666ccd6]
+- Updated dependencies [e3d86c5]
+  - @tabler/core@1.5.0
+
 ## 1.4.0
 
 ### Patch Changes

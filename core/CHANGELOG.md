@@ -1,5 +1,53 @@
 # @tabler/core
 
+## 1.5.0
+
+### Minor Changes
+
+- 5e119d4: Added Pay page with dedicated layout, navigation link, and card/PayPal payment form.
+- 100a37b: Added background pattern utilities and documentation, including updated preview demos.
+- 9c5d729: Added `.btn-ghost` button variant with transparent background and hover effects.
+- ec94693: Added `.card-gradient` component with gradient variants, direction modifiers, and animated backgrounds.
+- a198b0c: Added Geist font family integration.
+- 8d8727f: Added language selector dropdown to navbar with flag indicators for multilingual support.
+- 48dbd1e: Migrated build system from Rollup to Vite across all packages. Replaced `rollup.config.mjs` with `vite.config.mjs` and updated build scripts to use `vite build` instead of `rollup`. Build outputs remain identical (UMD and ESM formats) with no breaking changes for end users.
+- 4ce08ca: Refactored navbar-side component by consolidating separate include files (apps, language, notifications, theme, user) into a single `navbar-side.html` file for better maintainability.
+- 9c5d729: Added Progress Background component with text labels and value display.
+- 9c5d729: Added `.progress-lg` and `.progress-xl` size variants for the progress component.
+- 9c5d729: Added Progress Steps component for step-by-step navigation indicators.
+- e3d86c5: Upgraded `apexcharts` from `3.54.1` to `5.3.6` and added CSS variables (`--chart-{id}-color-{index}`) for dynamic chart colors to fix compatibility with the new version.
+
+### Patch Changes
+
+- 059bae1: Refactored Bootstrap exports to use single source of truth in `bootstrap.js` and removed duplicate exports from `tabler.js` for better maintainability.
+- 5018aa9: Fixed `.btn-icon` to be square by aligning `min-width` calculation with base `.btn` formula.
+- c860288: Fixed icon alignment for `.btn-sm` and `.btn-xl` sizes.
+- 2dc7eda: Updated `$border-color-translucent-dark` from `rgba(72, 110, 149, 0.14)` to `rgba(128, 150, 172, 0.2)` to improve visibility of form checkboxes and other form elements in dark mode.
+- c8b8b24: Fixed gray theme custom properties output using SCSS interpolation and updated default `$body-color` to `$gray-500`.
+- 6e656ad: Fixed `.input-icon-addon` z-index issue with form validation feedback and added default height.
+- 8bc6fa7: Fixed status color classes to use CSS variables instead of hardcoded values and include social colors (bitbucket, facebook, etc.) in status class generation.
+- e206d7a: Fixed white space on left side when scrollbar is present by replacing `margin-inline-start: calc(100vw - 100%)` with `scrollbar-gutter: stable` on `html` element, with `overflow-y: scroll` fallback for unsupported browsers.
+- 4ce08ca: Updated flags and avatars styling for better visual consistency.
+- b8b63d7: Fixed mixed declarations in SCSS.
+- 0106d6b: Update SCSS to use logical properties
+- 9432835: Implement `border-radius` mixin across various SCSS files
+- 9c5d729: Updated `stroke-width` for `.icon-sm` from `1` to `1.5` for better visibility.
+- 5e119d4: Added `bg-blur` utility and increased `container-tight` width for layout flexibility.
+- 3aba62e: Added `border-top-left-radius` and `border-top-right-radius` to first and last child elements in `.card-table` for proper corner rounding.
+- 0c79963: Added `media-print` mixin and print styles to hide interactive components during printing.
+- 301e778: Migrated `rgba()` functions to modern CSS color functions (`color-mix()` and `color-transparent()`) for better browser support and cleaner code. Replaced `rgba(var(--#{$prefix}*-rgb), ...)` with `color-mix(in srgb, var(--#{$prefix}*) ..., transparent)`, static percentage `color-mix()` with
+  `color-transparent()`, and `rgba($variable, ...)` with `color-transparent($variable, ...)`.
+- 9a3361f: Fixed double bottom border in tables.
+- 9c5d729: Added smooth transitions for progress bar `width` and `background-color` changes.
+- 1489b13: Added `.prose` alias for markdown content and updated preview/docs references and redirects.
+- 41ed22a: Removed redundant nullish coalescing operator from `html` option in popover and tooltip initialization.
+- 83ec6f8: Added Driver.js library integration and Tour demo page for interactive product tours and onboarding guides.
+- 9c5d729: Updated skip-link to use `visually-hidden` for improved accessibility.
+- 736e604: Updated deprecated global Sass functions to module equivalents (`map.merge`, `string.slice`, `math.percentage`, etc.).
+- f8dee0a: Updated Bootstrap to v5.3.8.
+- 9c5d729: Updated trending component to use `arrow-up`/`arrow-down` instead of `trending-up`/`trending-down`.
+- 666ccd6: Updated shadow tokens (`--tblr-shadow-*`) to use the new `xs`–`2xl` and `overlay` values.
+
 ## 1.4.0
 
 ### Minor Changes
